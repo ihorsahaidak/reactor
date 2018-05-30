@@ -26,6 +26,7 @@
 /www/vendor
 /www/*.*
 !/www/package.json
+!/www/webpack.config.js
 
 # Generic
 /www/build
