@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Default SPA</title>
+        <!-- Remove core assets -->
+        <remove src="requirejs/require.js"/>
+        <remove src="mage/requirejs/mixins.js"/>
+        <remove src="requirejs-config.js"/>
+        <remove src="mage/calendar.css"/>
+        <remove src="css/styles-m.css"/>
+        <remove src="css/styles-l.css"/>
+        <remove src="css/print.css"/>
+        <remove src="Magento_Swatches::css/swatches.css"/>
+        <remove src="styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="root">
+            <!-- Remove magento blocks -->
+            <referenceContainer name="after.body.start" remove="true"/>
+            <referenceContainer name="before.body.end" remove="true"/>
+            <referenceContainer name="page.wrapper" remove="true"/>
+
+            <!-- Add ReactJs entry point -->
+            <block class="Magento\Backend\Block\Page" name="reactor" template="Magento_Theme::reactor.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
