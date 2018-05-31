@@ -1,13 +1,14 @@
 <?php
-namespace Reactor\Index\Controller\Index;
+namespace Reactor\Spa\Controller\Cms;
 
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
 use Magento\Framework\App\Action\Context;
 use Magento\Framework\Controller\Result\JsonFactory;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Framework\App\Action\Action;
+use Magento\Catalog\Helper\Category;
 
-class Initialize extends Action
+class Index extends Action
 {
     /**
      * @var PageFactory
@@ -30,7 +31,7 @@ class Initialize extends Action
         PageFactory $pageFactory,
         JsonFactory $jsonFactory,
         CollectionFactory $categoryCollectionFactory,
-        \Magento\Catalog\Helper\Category $categoryHelper,
+        Category $categoryHelper,
         Context $context
     )
     {

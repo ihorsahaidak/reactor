@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <!--<preference for="Magento\Cms\Controller\Index\Index" type="Reactor\Spa\Controller\Cms\Index" />-->
+    <!--<preference for="Magento\Catalog\Controller\Category\View" type="YalekSoft\Spa\Controller\Catalog\Category\View" />
+    <preference for="Magento\Catalog\Controller\Product\View" type="YalekSoft\Spa\Controller\Catalog\Product\View" />
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="spa_remove_catalog_collection_limit" type="\YalekSoft\Spa\Plugin\Block\Catalog\Product\ProductList\ToolbarPlugin" sortOrder="5" />
+    </type>-->
+</config>
